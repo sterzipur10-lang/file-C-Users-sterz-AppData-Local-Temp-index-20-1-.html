@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RUNFEST 2026 — Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#">RUN<span>FEST</span></a>
+      <nav>
+        <a href="#about">Event</a>
+        <a href="#categories">Kategori</a>
+        <a href="#register">Pendaftaran</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="nav-btn" href="#register">Daftar Sekarang</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">RUNNING EVENT 2026</p>
+          <h1>RUN YOUR<br><em>LIMITS.</em></h1>
+          <p class="hero-copy">Satu langkah. Satu target. Satu pengalaman lari yang tidak terlupakan.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#register">Daftar Sekarang →</a>
+            <a class="btn ghost" href="#categories">Lihat Kategori</a>
+          </div>
+          <div class="event-meta">
+            <div><strong>20</strong><span>DES 2026</span></div>
+            <div><strong>06:00</strong><span>START</span></div>
+            <div><strong>5K · 10K · 21K</strong><span>KATEGORI</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="runner-mark">RUN<br>FEST</div>
+          <div class="date-badge">20<br><small>DES</small></div>
+          <p>KRaksaan, Jawa Timur</p>
+          <small>* Silakan edit nama event, tanggal, lokasi, dan visual sesuai kebutuhan.</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container intro-grid">
+        <div>
+          <p class="eyebrow">THE EVENT</p>
+          <h2>Run together.<br>Finish stronger.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>RUNFEST 2026 adalah template website pendaftaran event running yang siap Anda kembangkan. Semua konten di halaman ini dapat diedit dengan mudah melalui file HTML, CSS, dan JavaScript.</p>
+          <div class="stats">
+            <div><strong>5K</strong><span>Fun Run</span></div>
+            <div><strong>10K</strong><span>Race</span></div>
+            <div><strong>21K</strong><span>Half Marathon</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="section dark">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">CHOOSE YOUR RACE</p>
+            <h2>Kategori Lari</h2>
+          </div>
+          <p>Pilih jarak yang sesuai dengan targetmu.</p>
+        </div>
+        <div class="cards">
+          <article class="race-card">
+            <span class="number">01</span><h3>5K</h3><p>Fun Run</p><strong>Rp 125.000</strong>
+          </article>
+          <article class="race-card featured">
+            <span class="number">02</span><h3>10K</h3><p>Race</p><strong>Rp 175.000</strong>
+          </article>
+          <article class="race-card">
+            <span class="number">03</span><h3>21K</h3><p>Half Marathon</p><strong>Rp 250.000</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="register" class="section register">
+      <div class="container form-grid">
+        <div>
+          <p class="eyebrow">REGISTRATION</p>
+          <h2>Amankan<br>slotmu.</h2>
+          <p class="muted">Isi data peserta dengan benar. Setelah submit, nomor registrasi akan dibuat otomatis.</p>
+          <div class="notice">Template ini belum terhubung ke database/payment gateway. Integrasi dapat ditambahkan kemudian.</div>
+        </div>
+
+        <form id="registrationForm" class="form-card">
+          <label>Nama Lengkap<input required name="name" placeholder="Nama peserta"></label>
+          <div class="two">
+            <label>Email<input required type="email" name="email" placeholder="nama@email.com"></label>
+            <label>No. WhatsApp<input required name="phone" placeholder="08xxxxxxxxxx"></label>
+          </div>
+          <div class="two">
+            <label>Tanggal Lahir<input required type="date" name="birth"></label>
+            <label>Jenis Kelamin<select required name="gender"><option value="">Pilih</option><option>Laki-laki</option><option>Perempuan</option></select></label>
+          </div>
+          <div class="two">
+            <label>Kategori<select required name="category"><option value="">Pilih kategori</option><option>5K — Rp125.000</option><option>10K — Rp175.000</option><option>21K — Rp250.000</option></select></label>
+            <label>Ukuran Jersey<select required name="jersey"><option value="">Pilih</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select></label>
+          </div>
+          <label class="check"><input required type="checkbox"> Saya menyetujui syarat dan ketentuan pendaftaran.</label>
+          <button class="btn primary full" type="submit">Kirim Pendaftaran →</button>
+          <div id="result" class="result" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="container">
+        <p class="eyebrow">FAQ</p>
+        <h2>Pertanyaan Umum</h2>
+        <div class="faq-list">
+          <details><summary>Bagaimana cara pembayaran?</summary><p>Tambahkan instruksi transfer atau QRIS Anda di bagian ini.</p></details>
+          <details><summary>Kapan race pack diambil?</summary><p>Edit jadwal, lokasi, dan ketentuan race pack sesuai event Anda.</p></details>
+          <details><summary>Apakah data peserta aman?</summary><p>Untuk penggunaan produksi, hubungkan formulir ke backend/database dan gunakan HTTPS.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <strong>RUN<span>FEST</span> 2026</strong>
+      <span>© 2026 — Running Event Registration</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
